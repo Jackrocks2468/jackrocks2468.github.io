@@ -8,6 +8,9 @@
 <head>
 <script>
 
+document.getElementById("p2").style.color = "white";
+document.getElementById("p2").style.fontFamily = "ComicSansMS";
+document.getElementById("p2").style.fontSize = "200%";
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -57,9 +60,9 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("result").innerHTML = "Pepes clicked " + localStorage.clickcount ;
+        document.getElementById("p2").innerHTML = "Pepes clicked " + localStorage.clickcount ;
     } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        document.getElementById("p2").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
 </script>
