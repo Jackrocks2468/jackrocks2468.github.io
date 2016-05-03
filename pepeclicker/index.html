@@ -57,13 +57,14 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+       <font color="white" size="5"> document.getElementById("result").innerHTML = "Pepes clicked " + localStorage.clickcount ;
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
 </script>
 </head>
+</font>
 <body>
 <p><img src="https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png" height="350" width="350" onclick="clickCounter()"></p>
 <div id="result"></div>
