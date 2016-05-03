@@ -46,20 +46,30 @@ function checkCookie() {
 <body onload="checkCookie()">
 </body>
 </html>
+<html>
+<head>
+<script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+</head>
+<body>
+<p><img src="https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png" height="200" width="200" onclick="clickCounter()"></p>
+<div id="result"></div>
+</body>
+</html>
 
 
- <script type="text/javascript">
-
-    var clicks = 0;
-    function pepeclicks() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-    <center><img src="https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png" height="350" width="350" onclick="pepeclicks()">
-    <p><font size="5" color="white">rare pepes mined: <a id="clicks">0</a></p>
-
-</body></html>
 <!DOCTYPE html>
 <html>
 <head>
