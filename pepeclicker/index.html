@@ -57,9 +57,9 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("p2").innerHTML = "Pepes clicked " + localStorage.clickcount ;
+        document.getElementById("pepesclicked").innerHTML = "Pepes clicked " + localStorage.clickcount ;
     } else {
-        document.getElementById("p2").innerHTML = "Sorry, your browser does not support web storage...";
+        document.getElementById("pepesclicked").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
 </script>
@@ -75,7 +75,7 @@ function clickCounter() {
 <html>
 <head>
 <style>
-p2 {
+Pepes clicked {
     font-family:"ComicSansMS";
     font-size: 200%;
     color: white;
