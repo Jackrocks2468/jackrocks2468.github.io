@@ -51,7 +51,7 @@ function checkCookie() {
 <head>
 <script>
 function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
+    if(typeof(Storage) !== "pepesclicked") {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+1;
         } else {
@@ -66,7 +66,7 @@ function clickCounter() {
 </head>
 <body>
 <p><img src="https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png" height="350" width="350" onclick="clickCounter()"></p>
-<div id="p2"></div>
+<div id="pepesclicked"></div>
 </body>
 </html>
 
