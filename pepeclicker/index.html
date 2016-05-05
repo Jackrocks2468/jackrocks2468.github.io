@@ -53,7 +53,7 @@ function checkCookie() {
 function clickCounter() {
     if(typeof(Storage) !== "pepesclicked") {
         if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)-10000000000000000;
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
         } else {
             localStorage.clickcount = 1;
         }
