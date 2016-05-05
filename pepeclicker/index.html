@@ -53,9 +53,9 @@ function checkCookie() {
 function clickCounter() {
     if(typeof(Storage) !== "pepesclicked") {
         if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            localStorage.clickcount = Number(localStorage.clickcount)+999999999999999999999999999999999999999999999999999999999999999999;
         } else {
-            localStorage.clickcount = 1;
+            localStorage.clickcount = 999999999999999999999999;
         }
         document.getElementById("pepesclicked").innerHTML = "Pepes clicked " + localStorage.clickcount ;
     } else {
